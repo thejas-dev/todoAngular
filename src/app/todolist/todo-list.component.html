@@ -1,0 +1,13 @@
+<div (click)="trigger()" class="main-container">
+    <!-- <todo-list-item
+    [item]="{id:0,name:'item',completed:false}"
+    (removeTodo)="removeTodoFunc($event)"
+    (completeTodo)="completeTodoFunc($event)"
+    ></todo-list-item> -->
+    <todo-list-item
+    *ngFor="let item of todoList"
+    [item]="item"
+    (completeTodo)="completeTodoFunc($event)"
+    (removeTodo)="removeTodoFunc($event)"
+    ></todo-list-item>
+</div>

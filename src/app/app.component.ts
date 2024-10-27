@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgZone } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -10,4 +10,24 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'my_todo';
+  counter = 0;
+
+  constructor(private _ngZone: NgZone){
+    this._ngZone.runOutsideAngular(()=>{
+      
+      this.counter = 0;
+
+      window.setTimeout(()=>{
+        for(let i = 0; i < 10000000; i++){
+          this.counter++;
+        }
+
+        this._ngZone.run(()=>{
+          console.log("The task is completed");
+        })
+      },2000);
+
+    })
+  }
+
 }

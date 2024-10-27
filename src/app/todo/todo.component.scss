@@ -1,0 +1,32 @@
+.main-container{
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .goto-user-btn{
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: 0px;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+    .goto-user-btn:hover{
+        scale:110%;
+    }
+
+    .container{
+        height: 80%;
+        width: 40%;
+        background-color: rgb(240, 239, 239);
+        border-radius: 20px;
+        position: relative;
+    }
+}

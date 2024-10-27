@@ -1,0 +1,24 @@
+<div class="item-container">
+    <div (click)="checkElement()" class="container">
+        <div class="text-wrapper">
+            <h1 #title *ngIf="!item.completed" >
+                {{item.name}}
+            </h1>
+            <h1 #title *ngIf="item.completed" >
+                <s>{{item.name}}</s>
+            </h1>
+        </div>
+
+        <div class="button-wrapper">
+            <button (click)="!item.completed ? completeTodoFunc() : null" [class]="item.completed ? 'check-button checked' : 'check-button'" >
+                <fa-icon [icon]="faCircleCheck" class="check-button-icon"></fa-icon>
+            </button>
+            
+            <button (click)="removeTodoFunc()" class="delete-button" >
+                <fa-icon [icon]="faTrashCan" class="delete-button-icon"></fa-icon>
+            </button>
+        </div>
+
+
+    </div>
+</div>

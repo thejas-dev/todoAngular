@@ -1,0 +1,20 @@
+.create-button{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid rebeccapurple;
+    box-shadow: 0px 12px 30px rgba(238, 0, 230, 0.454);
+    transition: all 0.3s ease-in-out;
+    background-color: sandybrown;
+    .create-button-icon{
+        font-size: x-large;
+        color: white;
+    }
+}
+
+.create-button:hover{
+    scale: 110%;
+}

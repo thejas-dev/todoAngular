@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Welcome to user page</h1>
+
+    <h4>Username : {{user.username}}</h4>
+    <p>Username in reverse : {{user.username | reverse}}</p>
+    <h4>Age : {{user.age}}</h4>
+    <h4>Profession : {{user.profession}}</h4>
+    <h4>Proficient In : {{user.proficientIn}}</h4>
+    <h4>Experience : {{user.experience}}</h4>
+    <img class="profile-image" [src]="user.image" alt="User Image">
+    <h4>User Image</h4>
+
+</div>

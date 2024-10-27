@@ -1,0 +1,17 @@
+<div class="container">
+    <form action="" class="form" [formGroup]="loginForm" >
+            <h1>Authenticate</h1>
+            <label for="email" >
+                Email :-
+                <input type="email" name="email" placeholder="Enter email" formControlName="email" >
+            </label>
+        
+            <label for="password" >
+                Password :-
+                <input type="password" name="password" placeholder="Enter password" formControlName="password" >
+            </label>
+        
+            <button (click)="handleSubmit()" type="submit">Submit</button>
+    </form>
+
+</div>

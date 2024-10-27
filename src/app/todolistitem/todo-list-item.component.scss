@@ -1,0 +1,72 @@
+.item-container{
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(67, 67, 67, 0.137);
+    
+    .container{
+        display: flex;
+        align-items: center;
+
+        .text-wrapper{
+            width: 100%;
+            h1{
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+
+        .button-wrapper{
+            display: flex;
+            gap: 10px;
+
+            .delete-button{
+                border: 0px;
+                cursor: pointer;
+                transition: all 0.2s ease-in-out;
+    
+                .delete-button-icon{
+                    font-size: 18px;
+                    transition: all 0.1s ease-in-out;
+                    color: gray;
+                }
+                .delete-button-icon:hover{
+                    color: rgb(211, 0, 0);
+                }
+            }
+    
+            .delete-button:hover{
+                scale: 110%;
+            }
+    
+            .check-button{
+                border: 0px;
+                cursor: pointer;
+                transition: all 0.2s ease-in-out;
+    
+                .check-button-icon{
+                    font-size: 18px;
+                    transition: all 0.1s ease-in-out;
+                    color: gray;
+                }
+                .check-button-icon:hover{
+                    color: rgb(17, 208, 0);
+                }
+            }
+
+            .check-button.checked{
+                .check-button-icon{
+                    color: rgb(17, 208, 0);
+                }
+            }
+    
+            .check-button:hover{
+                scale: 110%;
+            }
+        }
+
+    }
+    
+}
+
+.item-container:hover{
+    background-color: rgba(205, 205, 205, 0.158);
+}

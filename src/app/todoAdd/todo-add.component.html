@@ -1,0 +1,13 @@
+<div [class]="appService.getOpenAddWindow() ? 'main-container' : 'main-container hidden'">
+    <div class="container">
+        <form class="todo-add-form" [formGroup]="todoAddProfile" (ngSubmit)="handleSubmit()" >
+            <div class="input-wrapper">
+                <input type="text" formControlName="name" id="todoInput" placeholder="Enter todo name" >
+            </div>
+            <button type="submit">
+                Add Todo
+            </button>
+        </form>
+
+    </div>
+</div>
